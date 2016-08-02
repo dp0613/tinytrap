@@ -1,0 +1,97 @@
+/**
+ * GRID SYSTEM CONTRIBUTED BY #dp0613
+ * This is grid system helps site auto responsive in many cases.
+ * And it allows to custom for personal point.
+ * This grid will be extended some day :3
+ * @Version: 1.0
+ * @For effect correctly, you need to include below tag into head of HTML
+ * <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+ */
+
+
+/* .container uses to wrap all elements
+=========================================================== */ 
+.container {
+	width: 100%;
+	max-width: 1200px; /*Base on extra largest screen width*/
+}
+
+.container * {
+	box-sizing: border-box; /*Make all borders span from outer into inner*/
+}
+
+/* .row uses to clear float in order to make all row 
+locate like a paper row (row per row) :3 
+=============================================================== */
+.row:before,
+.row:after {
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+/* .col-* uses to place one cell into .row
+ * Every it will have padding is 13px
+=============================================================== */
+[class*='col-'] {
+	float: left;
+	min-height: 1px; /*This line prevent cell will be stacked on top when it's empty*/	
+	padding: 13px; /*Gutter - This is #dp06(13) :p*/
+}
+
+/* Grid system width 6 columns
+ * One row can contains max 6 cols ( .col-1 )
+=============================================================*/
+.col-1 {
+	width: 16.66%; 
+}
+
+.col-2 {
+	width: 33.33%; 
+}
+
+.col-3 {
+	width: 50%; 
+}
+
+.col-4 {
+	width: 66.664%;
+}
+
+.col-5 {
+	width: 83.33%;
+}
+
+.col-6 {
+	width: 100%;
+}
+
+/*Responsive our grid
+===================================================*/
+
+/*Below is for screen width smaller than 800px
+ * One row can contains max 3 cols ( .col-1 )
+*/
+@media all and ( max-width:800px ) {
+	.col-1 { width: 33.33%; }
+	.col-2 { width: 50%; }
+	.col-3 { width: 83.33%; }
+	.col-4 { width: 100%; }
+	.col-5 { width: 100%; }
+	.col-6 { width: 100%; }
+}
+
+/* Below is for screen width smaller than 650px
+ * One row can contains max 2 cols ( .col-1 )
+ */
+@media all and ( max-width:650px ) {
+	.col-1 { width: 50%; }
+	.col-2 { width: 100%; }
+	.col-3 { width: 100%; }
+	.col-4 { width: 100%; }
+	.col-5 { width: 100%; }
+	.col-6 { width: 100%; }
+}
+
+/**The end
+==============================================================================
