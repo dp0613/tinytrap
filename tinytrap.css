@@ -8,6 +8,26 @@
  * <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
  */
 
+/* Reseting
+ * You don't need reset in your extra styling
+============================================================*/
+* {
+	padding: 0;
+	margin: 0;
+}
+
+ul, ol, li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+table {
+	table-layout: fixed;
+	border-collapse: collapse;
+}
 
 /* .container uses to wrap all elements
 =========================================================== */ 
@@ -18,6 +38,12 @@
 
 .container * {
 	box-sizing: border-box; /*Make all borders span from outer into inner*/
+}
+
+/* .container-fluid always fluid device width
+===========================================================*/
+.container-fluid {
+	width: 100%;
 }
 
 /* .row uses to clear float in order to make all row 
@@ -94,4 +120,4 @@ locate like a paper row (row per row) :3
 }
 
 /**The end
-==============================================================================
+=============================================================== */
