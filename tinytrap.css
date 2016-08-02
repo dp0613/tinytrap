@@ -36,7 +36,8 @@ table {
 	max-width: 1200px; /*Base on extra largest screen width*/
 }
 
-.container * {
+.container *,
+.contaner-fluid * {
 	box-sizing: border-box; /*Make all borders span from outer into inner*/
 }
 
